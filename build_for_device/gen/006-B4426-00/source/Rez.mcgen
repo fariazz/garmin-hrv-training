@@ -11,13 +11,15 @@ module Rez {
 
     module Layouts {
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_stageText = new WatchUi.Text({:identifier=>"stageText", :locX=>(390 * 0.5), :locY=>(390 * (35 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+            var rez_cmp_local_text_stageText = new WatchUi.Text({:identifier=>"stageText", :locX=>(390 * 0.5), :locY=>(390 * (30 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
 
-            var rez_cmp_local_text_timerText = new WatchUi.Text({:identifier=>"timerText", :locX=>(390 * 0.5), :locY=>(390 * (55 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+            var rez_cmp_local_text_timerText = new WatchUi.Text({:identifier=>"timerText", :locX=>(390 * 0.5), :locY=>(390 * (50 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_stressText = new WatchUi.Text({:identifier=>"stressText", :color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>(390 * (60 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
 
             var rez_cmp_local_text_cycleCount = new WatchUi.Text({:identifier=>"cycleCount", :color=>Graphics.COLOR_WHITE, :locX=>(390 * 0.5), :locY=>(390 * (75 / 100.0)), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
-            return [rez_cmp_local_text_stageText, rez_cmp_local_text_timerText, rez_cmp_local_text_cycleCount] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_stageText, rez_cmp_local_text_timerText, rez_cmp_local_text_stressText, rez_cmp_local_text_cycleCount] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

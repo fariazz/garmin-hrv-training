@@ -1,5 +1,6 @@
 <layout id="MainLayout">
-    <label id="stageText" x="center" y="35%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="timerText" x="center" y="55%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <label id="cycleCount" x="center" y="75%" font="Graphics.FONT_SMALL" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="stageText" x="center" y="20%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="timerText" x="center" y="35%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
+    <label id="stressText" x="center" y="60%" font="Graphics.FONT_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <label id="cycleCount" x="center" y="80%" font="Graphics.FONT_XTINY" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
 </layout>

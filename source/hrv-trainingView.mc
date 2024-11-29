@@ -1,6 +1,8 @@
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Timer;
+import Toybox.ActivityMonitor;
+import Toybox.System;
 
 class hrv_trainingView extends WatchUi.View {
     private var mTimer;
@@ -11,10 +13,12 @@ class hrv_trainingView extends WatchUi.View {
     private var mStageText;
     private var mTimerText;
     private var mCycleText;
+    private var mStressText;
 
     function initialize() {
         View.initialize();
         mTimer = new Timer.Timer();
+        System.println("View initialized");  // Add debug logging
     }
 
     function onLayout(dc as Dc) as Void {
@@ -22,8 +26,10 @@ class hrv_trainingView extends WatchUi.View {
         mStageText = View.findDrawableById("stageText");
         mTimerText = View.findDrawableById("timerText");
         mCycleText = View.findDrawableById("cycleCount");
+        mStressText = View.findDrawableById("stressText");
         mStageText.setText(WatchUi.loadResource(Rez.Strings.Start));
         mTimerText.setText("");
+        updateStressLevel();         
     }
 
     function startBreathingCycle() {
@@ -121,11 +127,13 @@ class hrv_trainingView extends WatchUi.View {
             mTimerText.setText(timeLeft.toString() + "s");
             mTimerText.setColor(color);
             mCycleText.setText("Cycle " + mCycle + " of 10");
+            updateStressLevel();  
         } else {
             mStageText.setText(text);
             mStageText.setColor(Graphics.COLOR_WHITE);
             mTimerText.setText("");
             mCycleText.setText("");
+            updateStressLevel();  
         }
     }
 
@@ -143,6 +151,37 @@ class hrv_trainingView extends WatchUi.View {
     function onHide() as Void {
         if (mTimer != null) {
             mTimer.stop();
+        }
+    }
+
+    function updateStressLevel() {
+        var info = ActivityMonitor.getInfo();
+        if (info != null && info has :stressScore) {
+            var stress = info.stressScore;
+            if (stress != null) {
+                var stressText = "Stress: " + stress;
+                var color = Graphics.COLOR_WHITE;
+                
+                // Color-code stress levels
+                if (stress < 25) {
+                    color = Graphics.COLOR_GREEN;
+                } else if (stress < 50) {
+                    color = Graphics.COLOR_BLUE;
+                } else if (stress < 75) {
+                    color = Graphics.COLOR_YELLOW;
+                } else {
+                    color = Graphics.COLOR_RED;
+                }
+                
+                mStressText.setText(stressText);
+                mStressText.setColor(color);
+            } else {
+                mStressText.setText("Stress: --");
+                mStressText.setColor(Graphics.COLOR_WHITE);
+            }
+        } else {
+            mStressText.setText("Stress: N/A");
+            mStressText.setColor(Graphics.COLOR_WHITE);
         }
     }
 }

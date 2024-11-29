@@ -5,7 +5,7 @@
         Use "Monkey C: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-    <iq:application id="6fcc037b-e8b0-4605-b7da-2b6f9c8b5d05" type="widget" name="@Strings.AppName" entry="hrv_trainingApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+    <iq:application id="6fcc037b-e8b0-4605-b7da-2b6f9c8b5d05" type="widget" name="@Strings.AppName" entry="hrv_trainingApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="5.0.0">
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -20,12 +20,16 @@
             Use "Monkey C: Edit Permissions" from the Visual Studio Code command
             palette to update permissions.
         -->
-        <iq:permissions/>
+        <iq:permissions>
+            <iq:uses-permission id="Sensor"/>
+        </iq:permissions>
         <!--
             Use "Monkey C: Edit Languages" from the Visual Studio Code command
             palette to edit your compatible language list.
         -->
-        <iq:languages/>
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
             command palette to edit the included barrels.
