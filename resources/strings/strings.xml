@@ -1,0 +1,8 @@
+<strings>
+    <string id="AppName">hrv-training</string>
+    <string id="Inhale">Inhale</string>
+    <string id="Hold">Hold</string>
+    <string id="Exhale">Exhale</string>
+    <string id="Pause">Pause</string>
+    <string id="Start">Press Start</string>
+</strings>
