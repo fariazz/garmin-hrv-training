@@ -47,7 +47,7 @@ c_projects_garmin_hrv_training_build_for_device_gen_006_B4426_00_source_Rez_mcge
             %tmp.17 = aputv %tmp.16 %tmp.12 %tmp.15;
             %tmp.19 = const :locY;
             %tmp.20 = 390;
-            %tmp.21 = 30;
+            %tmp.21 = 20;
             %tmp.22 = 100.0;
             %tmp.23 = div %tmp.21 %tmp.22;
             %tmp.24 = mul %tmp.20 %tmp.23;
@@ -83,7 +83,7 @@ c_projects_garmin_hrv_training_build_for_device_gen_006_B4426_00_source_Rez_mcge
             %tmp.55 = aputv %tmp.54 %tmp.50 %tmp.53;
             %tmp.57 = const :locY;
             %tmp.58 = 390;
-            %tmp.59 = 50;
+            %tmp.59 = 35;
             %tmp.60 = 100.0;
             %tmp.61 = div %tmp.59 %tmp.60;
             %tmp.62 = mul %tmp.58 %tmp.61;
@@ -165,7 +165,7 @@ c_projects_garmin_hrv_training_build_for_device_gen_006_B4426_00_source_Rez_mcge
             %tmp.143 = aputv %tmp.142 %tmp.138 %tmp.141;
             %tmp.145 = const :locY;
             %tmp.146 = 390;
-            %tmp.147 = 75;
+            %tmp.147 = 80;
             %tmp.148 = 100.0;
             %tmp.149 = div %tmp.147 %tmp.148;
             %tmp.150 = mul %tmp.146 %tmp.149;
@@ -178,7 +178,7 @@ c_projects_garmin_hrv_training_build_for_device_gen_006_B4426_00_source_Rez_mcge
             %tmp.158 = aputv %tmp.157 %tmp.154 %tmp.156;
             %tmp.160 = const :font;
             %tmp.161 = getm $.Toybox.Graphics;
-            %tmp.162 = getv %tmp.161 :FONT_SMALL;
+            %tmp.162 = getv %tmp.161 :FONT_XTINY;
             %tmp.163 = dup %tmp.158;
             %tmp.164 = aputv %tmp.163 %tmp.160 %tmp.162;
             %tmp.121 = newc %tmp.124 (%tmp.164);

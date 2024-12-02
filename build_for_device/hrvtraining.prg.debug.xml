@@ -146,7 +146,7 @@
         <entry filename="c:\\projects\\garmin\\hrv-training\\build_for_device\\gen\\006-B4426-00\\source\\Rez.mcgen" id="21" lineNum="16" parent="globals/Rez/Layouts" pc="268437290" symbol="MainLayout"/>
         <entry filename="c:\\projects\\garmin\\hrv-training\\build_for_device\\gen\\006-B4426-00\\source\\Rez.mcgen" id="21" lineNum="18" parent="globals/Rez/Layouts" pc="268437368" symbol="MainLayout"/>
         <entry filename="c:\\projects\\garmin\\hrv-training\\build_for_device\\gen\\006-B4426-00\\source\\Rez.mcgen" id="21" lineNum="20" parent="globals/Rez/Layouts" pc="268437457" symbol="MainLayout"/>
-        <entry filename="c:\\projects\\garmin\\hrv-training\\build_for_device\\gen\\006-B4426-00\\source\\Rez.mcgen" id="21" lineNum="22" parent="globals/Rez/Layouts" pc="268437546" symbol="MainLayout"/>
+        <entry filename="c:\\projects\\garmin\\hrv-training\\build_for_device\\gen\\006-B4426-00\\source\\Rez.mcgen" id="21" lineNum="22" parent="globals/Rez/Layouts" pc="268437545" symbol="MainLayout"/>
     </pcToLineNum>
     <symbolTable>
         <entry field="true" id="8392278" symbol="stressScore"/>
@@ -226,11 +226,11 @@
         <entry endPc="268437074" name="currentPhaseLength" stackId="2" startPc="268436754"/>
         <entry arg="true" endPc="268437099" name="view" stackId="1" startPc="268437076"/>
         <entry endPc="268437182" name="view" stackId="1" startPc="268437122"/>
-        <entry arg="true" endPc="268437570" name="dc" stackId="1" startPc="268437201"/>
-        <entry endPc="268437570" name="rez_cmp_local_text_stageText" stackId="2" startPc="268437212"/>
-        <entry endPc="268437570" name="rez_cmp_local_text_timerText" stackId="3" startPc="268437212"/>
-        <entry endPc="268437570" name="rez_cmp_local_text_stressText" stackId="4" startPc="268437212"/>
-        <entry endPc="268437570" name="rez_cmp_local_text_cycleCount" stackId="5" startPc="268437212"/>
+        <entry arg="true" endPc="268437569" name="dc" stackId="1" startPc="268437201"/>
+        <entry endPc="268437569" name="rez_cmp_local_text_stageText" stackId="2" startPc="268437212"/>
+        <entry endPc="268437569" name="rez_cmp_local_text_timerText" stackId="3" startPc="268437212"/>
+        <entry endPc="268437569" name="rez_cmp_local_text_stressText" stackId="4" startPc="268437212"/>
+        <entry endPc="268437569" name="rez_cmp_local_text_cycleCount" stackId="5" startPc="268437212"/>
     </localVars>
     <deviceInfo deviceVersion="35026752466eceaff46011f2f33580ace85b3091" partNumber="006-B4426-00"/>
     <annotations>
@@ -327,7 +327,7 @@
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437570" name="MainLayout" parent="Layouts" startPc="268437201">
+        <functionEntry accessMode="public" endPc="268437569" name="MainLayout" parent="Layouts" startPc="268437201">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
